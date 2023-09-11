@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
+import 'package:flutter_amazone_ui/pages/account_page.dart';
 
 class PersonScreen extends StatelessWidget {
   const PersonScreen({Key? key});
@@ -119,18 +120,23 @@ class PersonScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Container(
-                  alignment: Alignment.center,
-                  width: 170,
-                  height: 55,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(30),
-                    border: Border.all(color: Colors.grey, width: 2),
-                  ),
-                  child: const Text(
-                    "Your Account",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(builder: (ctx)=>YourAccount()));
+                  },
+                  child: Container(
+                    alignment: Alignment.center,
+                    width: 170,
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(30),
+                      border: Border.all(color: Colors.grey, width: 2),
+                    ),
+                    child: const Text(
+                      "Your Account",
+                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                    ),
                   ),
                 ),
                 Container(
@@ -249,7 +255,7 @@ class PersonScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: Container(
-                    width: 200,
+                    width: 150,
                     height: 150,
                     decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey, width: 2),
@@ -259,7 +265,7 @@ class PersonScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: 200,
+                  width: 150,
                   height: 150,
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey, width: 2),
@@ -270,37 +276,39 @@ class PersonScreen extends StatelessWidget {
               ],
             ),
              Row(
-              children: const [
-                SizedBox(
-                  width: 40,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children:  [
+               
+                Container(
+                  child: Text(
+                    "S23 Ultra",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                 ),
-                Text(
-                  "S23 Ultra",
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                SizedBox(
-                  width: 190,
-                ),
-                Text(" Marshall ",
-                    style: TextStyle(fontWeight: FontWeight.bold))
+                
+                Container(
+                  child: Text(" Marshall ",
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                )
               ],
-            ),
-            const Row(
+                       ),
+             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                SizedBox(
-                  width: 40,
+                
+                Container(
+                  child: Text(
+                    "2 viewed",
+                    style: TextStyle(color: Color.fromARGB(255, 67, 65, 65)),
+                  ),
                 ),
-                Text(
-                  "2 viewed",
-                  style: TextStyle(color: Color.fromARGB(255, 67, 65, 65)),
-                ),
-                SizedBox(
-                  width: 190,
-                ),
-                Text(" 1 viewed",
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 83, 81, 81),
-                    ))
+               
+                Container(
+                  child: Text(" 1 viewed",
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 83, 81, 81),
+                      )),
+                )
               ],
             ),
             Row(
@@ -309,7 +317,7 @@ class PersonScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: Container(
-                    width: 200,
+                    width: 150,
                     height: 150,
                     decoration: BoxDecoration(
                         border: Border.all(color: Colors.grey, width: 2),
@@ -319,7 +327,7 @@ class PersonScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: 200,
+                  width: 150,
                   height: 150,
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey, width: 2),
@@ -330,37 +338,39 @@ class PersonScreen extends StatelessWidget {
               ],
             ),
              Row(
-              children: const [
-                SizedBox(
-                  width: 40,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children:  [
+                
+                Container(
+                  child: Text(
+                    "calvin clean",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                 ),
-                Text(
-                  "calvin clean",
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                SizedBox(
-                  width: 190,
-                ),
-                Text("Ray ban",
-                    style: TextStyle(fontWeight: FontWeight.bold))
+               
+                Container(
+                  child: Text("Ray sun glass",
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                )
               ],
             ),
-            const Row(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                SizedBox(
-                  width: 40,
+                
+                Container(
+                  child: Text(
+                    "2 viewed",
+                    style: TextStyle(color: Color.fromARGB(255, 67, 65, 65)),
+                  ),
                 ),
-                Text(
-                  "2 viewed",
-                  style: TextStyle(color: Color.fromARGB(255, 67, 65, 65)),
-                ),
-                SizedBox(
-                  width: 190,
-                ),
-                Text(" 1 viewed",
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 83, 81, 81),
-                    ))
+                
+                Container(
+                  child: Text("1 viewed",
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 83, 81, 81),
+                      )),
+                )
               ],
             ),
           ],

@@ -59,6 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         body: SingleChildScrollView(
+           scrollDirection: Axis.vertical,
           child: Column(
             children: [
               Container(
@@ -77,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         width: 20,
                       ),
                       Text(
-                        "Deliver  to  minhaj  -  Calicut  673525",
+                        "Deliver to minhaj - Malappuram 676541",
                         style:
                             TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                       ),
@@ -91,121 +92,109 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: InkWell(
-                        child: Center(
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                "asset/amazonfresh.png",
-                                width: 70,
-                                height: 70,
-                              ),
-                              const Text(
-                                "Fresh",
-                                style: TextStyle(fontWeight: FontWeight.w500),
-                              ),
-                            ],
-                          ),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              "asset/amazonfresh.png",
+                              width: 60,
+                              height: 60,
+                            ),
+                            const Text(
+                              "Fresh",
+                              style: TextStyle(fontWeight: FontWeight.w500),
+                            ),
+                          ],
                         ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: InkWell(
-                        child: Center(
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                "asset/Mobiles.png",
-                                width: 70,
-                                height: 70,
-                              ),
-                              const Text(
-                                "Mobile",
-                                style: TextStyle(fontWeight: FontWeight.w500),
-                              ),
-                            ],
-                          ),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              "asset/Mobiles.png",
+                              width: 60,
+                              height: 60,
+                            ),
+                            const Text(
+                              "Mobile",
+                              style: TextStyle(fontWeight: FontWeight.w500),
+                            ),
+                          ],
                         ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: InkWell(
-                        child: Center(
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                "asset/Fashion.png",
-                                width: 70,
-                                height: 70,
-                              ),
-                              const Text(
-                                "Fashion",
-                                style: TextStyle(fontWeight: FontWeight.w500),
-                              ),
-                            ],
-                          ),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              "asset/Fashion.png",
+                              width: 60,
+                              height: 60,
+                            ),
+                            const Text(
+                              "Fashion",
+                              style: TextStyle(fontWeight: FontWeight.w500),
+                            ),
+                          ],
                         ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: InkWell(
-                        child: Center(
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                "asset/Deals.png",
-                                width: 70,
-                                height: 70,
-                              ),
-                              const Text(
-                                "Deals",
-                                style: TextStyle(fontWeight: FontWeight.w500),
-                              ),
-                            ],
-                          ),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              "asset/Deals.png",
+                              width: 60,
+                              height: 60,
+                            ),
+                            const Text(
+                              "Deals",
+                              style: TextStyle(fontWeight: FontWeight.w500),
+                            ),
+                          ],
                         ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: InkWell(
-                        child: Center(
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                "asset/MiniTv.png",
-                                width: 70,
-                                height: 70,
-                              ),
-                              const Text(
-                                "MiniTV",
-                                style: TextStyle(fontWeight: FontWeight.w500),
-                              ),
-                            ],
-                          ),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              "asset/MiniTv.png",
+                              width: 60,
+                              height: 60,
+                            ),
+                            const Text(
+                              "MiniTV",
+                              style: TextStyle(fontWeight: FontWeight.w500),
+                            ),
+                          ],
                         ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: InkWell(
-                        child: Center(
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                "asset/Eletronics.png",
-                                width: 70,
-                                height: 70,
-                              ),
-                              const Text(
-                                "Electronics",
-                                style: TextStyle(fontWeight: FontWeight.w500),
-                              ),
-                            ],
-                          ),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              "asset/Eletronics.png",
+                              width: 60,
+                              height: 60,
+                            ),
+                            const Text(
+                              "Electronics",
+                              style: TextStyle(fontWeight: FontWeight.w500),
+                            ),
+                          ],
                         ),
                       ),
                     ),
@@ -217,8 +206,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             children: [
                               Image.asset(
                                 "asset/Home.png",
-                                width: 70,
-                                height: 70,
+                                width: 60,
+                                height: 60,
                               ),
                               const Text(
                                 "Home",
@@ -237,8 +226,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             children: [
                               Image.asset(
                                 "asset/Beauty.png",
-                                width: 70,
-                                height: 70,
+                                width: 60,
+                                height: 60,
                               ),
                               const Text(
                                 "Beauty",
@@ -257,8 +246,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             children: [
                               Image.asset(
                                 "asset/movie.avif",
-                                width: 70,
-                                height: 70,
+                                width: 60,
+                                height: 60,
                               ),
                               const Text(
                                 "Movies",
@@ -296,7 +285,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         onPageChanged: (index, reason) =>
                             setState(() => activeIndex  = index),
                       )),
-                  Positioned(bottom: 10, left: 160, child: builderIndicator()),
+                  Positioned(bottom: 10, left: 120, child: builderIndicator()),
                   ],
                 ),
               ),
@@ -311,7 +300,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Container(
                               height: 175,
                               width: 150,
-                              color: Colors.amber,
+                              // color: Colors.amber,
                               
                             ),
                               Positioned(
@@ -417,7 +406,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                ),
                Container(
-                height: 100,
+                height: 180,
               width: double.infinity,
               child: Image.asset('asset/movie.avif'),
             )  

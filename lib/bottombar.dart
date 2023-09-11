@@ -24,7 +24,7 @@ final List<Widget>_pages=[
    HomeScreen(),
    PersonScreen(),
    CartScreen(),
-   MenuScreen()
+   MenuScreen(),
 ];
 
   @override
@@ -41,7 +41,8 @@ final List<Widget>_pages=[
               BottomNavigationBarItem(icon: Icon(Icons.shopping_cart),label: ''),
               BottomNavigationBarItem(icon: Icon(Icons.menu_rounded),label: ''),
                      ],
-                    backgroundColor: Colors.amber, ),
+                    // backgroundColor: Colors.amber,
+                     ),
            
         
       
