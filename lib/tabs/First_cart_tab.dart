@@ -151,7 +151,7 @@ class FirstTab extends StatelessWidget {
               children: [
                 Container(
                   child: Image.asset(
-                    'asset/pngimg.com - iphone_14_PNG6.png',
+                    'asset/i phone 14 pro mX.png',
                     width: 180,
                   ),
                 ),
@@ -181,11 +181,76 @@ class FirstTab extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      "Color : Deep Purple",
+                      "Color : silver",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     Text(
                       "Size : 256 GB",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "rs20 cashback applied.",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.green),
+                    ),
+                    Text(
+                      "Buy with other items in cart.",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.green),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            Divider(
+              height: 2,color: Colors.grey,
+            ),
+            Row(
+              children: [
+                Container(
+                  child: Image.asset(
+                    'asset/i phone 14 promax black.png',
+                    width: 180,
+                  ),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  
+                  children: [
+                    Text( 'Apple Iphone 14 ProMax',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      'Black',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      "1,00,000",
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold,),
+                    ),
+                     Text(
+                      '1,39,999',
+                      style: TextStyle(fontWeight: FontWeight.bold,decoration: TextDecoration.lineThrough),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text(
+                        "Eligible for FREE Shipping",
+                      ),
+                    ),
+                    Text(
+                      "Color : Black",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      "Size : 1 TB",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     SizedBox(

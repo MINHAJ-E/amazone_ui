@@ -12,10 +12,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int activeIndex=0;
-  final images=[
-     "asset/ban1.webp",
-     "asset/ban2.webp",
+  int activeIndex = 0;
+  final images = [
+    "asset/ban1.webp",
+    "asset/ban2.webp",
     "asset/ban3.jpg",
     'asset/ban4.webp',
     'asset/ban5.webp',
@@ -59,11 +59,11 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         body: SingleChildScrollView(
-           scrollDirection: Axis.vertical,
+          scrollDirection: Axis.vertical,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                
                 height: 40,
                 decoration: const BoxDecoration(
                     color: Color.fromARGB(100, 100, 231, 198)),
@@ -79,8 +79,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       Text(
                         "Deliver to minhaj - Malappuram 676541",
-                        style:
-                            TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 17, fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -238,26 +238,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: InkWell(
-                        child: Center(
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                "asset/movie.avif",
-                                width: 60,
-                                height: 60,
-                              ),
-                              const Text(
-                                "Movies",
-                                style: TextStyle(fontWeight: FontWeight.w500),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -270,153 +250,252 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Stack(
                   children: [
                     CarouselSlider.builder(
-                      itemCount: images.length,
-                      itemBuilder: (context, index, realIndex) {
-                        final imagePath = images[index];
-                        return buildImage(imagePath, index);
-                      },
+                        itemCount: images.length,
+                        itemBuilder: (context, index, realIndex) {
+                          final imagePath = images[index];
+                          return buildImage(imagePath, index);
+                        },
                         options: CarouselOptions(
-                        height: 220,
-                        // autoPlay: true,
-                        // reverse: true,
-                        // autoPlayInterval: Duration(seconds: 2),
-                        aspectRatio: 2,
-                        viewportFraction: 1,
-                        onPageChanged: (index, reason) =>
-                            setState(() => activeIndex  = index),
-                      )),
-                  Positioned(bottom: 10, left: 120, child: builderIndicator()),
+                          height: 220,
+                          autoPlay: true,
+                          // reverse: true,
+                          autoPlayInterval: Duration(seconds: 1),
+                          aspectRatio: 2,
+                          viewportFraction: 1,
+                          onPageChanged: (index, reason) =>
+                              setState(() => activeIndex = index),
+                        )),
+                    Positioned(
+                        bottom: 10, left: 120, child: builderIndicator()),
                   ],
                 ),
               ),
-               SingleChildScrollView(
+              SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
-                 child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Card(
                         child: Stack(
                           children: [
                             Container(
                               height: 175,
                               width: 150,
                               // color: Colors.amber,
-                              
                             ),
-                              Positioned(
-                              top: 20,  
-                              left: 10, 
+                            Positioned(
+                              top: 20,
+                              left: 10,
                               child: Column(
                                 children: const [
                                   CircleAvatar(
                                     radius: 25,
-                                    backgroundImage: AssetImage('asset/amazon-pay-square-rounded-logo-19616.png'),
+                                    backgroundImage: AssetImage(
+                                        'asset/amazon-pay-square-rounded-logo-19616.png'),
                                   ),
-                                 
                                   Text(
                                     'Amazone pay',
-                                    style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold), 
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.bold),
                                   ),
                                 ],
                               ),
                             ),
                             Positioned(
-                              top: 20,  
-                              right: 10, 
+                              top: 20,
+                              right: 10,
                               child: Column(
                                 children: const [
                                   CircleAvatar(
                                     radius: 25,
-                                    backgroundImage: AssetImage('asset/Sendmoney.png'),
+                                    backgroundImage:
+                                        AssetImage('asset/Sendmoney.png'),
                                   ),
-                                  
                                   Text(
                                     'Send money',
-                                    style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold),
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.bold),
                                   ),
                                 ],
                               ),
                             ),
                             Positioned(
-                              bottom: 20,  
-                              left: 10, 
+                              bottom: 20,
+                              left: 10,
                               child: Column(
                                 children: const [
                                   CircleAvatar(
                                     radius: 25,
-                                   backgroundImage: AssetImage("asset/scanqr.png"),
+                                    backgroundImage:
+                                        AssetImage("asset/scanqr.png"),
                                   ),
-                                 
                                   Text(
                                     'Scan any QR',
-                                    style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold),
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.bold),
                                   ),
                                 ],
                               ),
                             ),
                             Positioned(
-                              bottom: 20,  
-                              right: 10, 
+                              bottom: 20,
+                              right: 10,
                               child: Column(
                                 children: const [
                                   CircleAvatar(
                                     radius: 25,
-                                    backgroundImage: AssetImage('asset/Sendmoney.png'),
+                                    backgroundImage:
+                                        AssetImage('asset/Sendmoney.png'),
                                   ),
-                                 
                                   Text(
                                     'Pay Bills',
-                                    style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold),
+                                    style: TextStyle(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.bold),
                                   ),
                                 ],
                               ),
                             ),
-               
                           ],
                         ),
                       ),
-                     Padding(
-                        padding: const EdgeInsets.all(8.0),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Card(
                         child: Container(
                           height: 175,
                           width: 150,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('asset/smallboxoffer.jpeg'), 
-                              fit: BoxFit.cover,
+                              image: AssetImage('asset/smallboxoffer.jpeg'),
+                              fit: BoxFit.fill,
                             ),
                           ),
                         ),
                       ),
-
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Card(
                         child: Container(
                           height: 175,
                           width: 150,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('asset/one+ad_edited.jpg'), 
-                              fit: BoxFit.cover,
+                              image: AssetImage('asset/amazone boooks.png'),
+                              fit: BoxFit.fitWidth,
                             ),
                           ),
                         ),
                       ),
-                    ],
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 200,
+                  width: double.infinity,
+                  child: Image.asset('asset/realme 2.png'),
+                ),
+              ),
+              // Container(
+              //   height: 200,
+              //   width: double.infinity,
+              //   child: Image.asset('asset/amazone watch.png'),
+              // )
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text('Clothing,footwear& more',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+              ),
+               Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Container(
+                    width: 150,
+                    height: 150,
+                  
+                    child: Image.asset("asset/T shirt for men.png"),
                   ),
-               ),
-               Container(
-                height: 180,
-              width: double.infinity,
-              child: Image.asset('asset/movie.avif'),
-            )  
+                ),
+                Container(
+                  width: 150,
+                  height: 150,
+                
+                  child: Image.asset("asset/T shirt Kids.png"),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children:  [
+                
+                Container(
+                  child: Text(
+                    "Mens T shirt",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+               
+                Container(
+                  child: Text("Kids T shirt",
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                )
+              ],
+            ),
+               Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Container(
+                    width: 150,
+                    height: 150,
+                  
+                    child: Image.asset("asset/Shoess.png"),
+                  ),
+                ),
+                Container(
+                  width: 150,
+                  height: 150,
+                
+                  child: Image.asset("asset/bags.png"),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children:  [
+                
+                Container(
+                  child: Text(
+                    "shoes",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+               
+                Container(
+                  child: Text("bags",
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                )
+              ],
+            ),
             ],
           ),
         ),
       ),
     );
   }
-   Widget buildImage(String imagePath, int index) => Container(
+
+  Widget buildImage(String imagePath, int index) => Container(
         // margin: const EdgeInsets.symmetric(),
         color: Colors.black,
         child: Image.asset(
@@ -424,7 +503,7 @@ class _HomeScreenState extends State<HomeScreen> {
           fit: BoxFit.fill,
         ),
       );
-       Widget builderIndicator() => AnimatedSmoothIndicator(
+  Widget builderIndicator() => AnimatedSmoothIndicator(
         activeIndex: activeIndex,
         count: images.length,
         effect: const WormEffect(

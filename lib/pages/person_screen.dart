@@ -188,7 +188,7 @@ class PersonScreen extends StatelessWidget {
                           border: Border.all(color: Colors.grey, width: 2),
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10)),
-                      child: Image.asset("asset/boatH.webp"),
+                      child: Image.asset("asset/BOAT HEADSET.png"),
                     ),
                     SizedBox(
                       width: 5,
@@ -212,7 +212,31 @@ class PersonScreen extends StatelessWidget {
                           border: Border.all(color: Colors.grey, width: 2),
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10)),
-                      child: Image.asset("asset/mouse.png"),
+                      child: Image.asset("asset/EVOFOX keybord.png"),
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Container(
+                      width: 180,
+                      height: 150,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey, width: 2),
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Image.asset("asset/ZOOK BLADE MOUSE.png"),
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Container(
+                      width: 180,
+                      height: 150,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey, width: 2),
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Image.asset("asset/classmate notebook.png"),
                     ),
                   ],
                 ),
@@ -261,33 +285,36 @@ class PersonScreen extends StatelessWidget {
                         border: Border.all(color: Colors.grey, width: 2),
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10)),
-                    child: Image.asset("asset/s23ultra.webp"),
+                    child: Image.asset("asset/bODY WASHES NIVIA.png"),
                   ),
                 ),
                 Container(
+                 
                   width: 150,
                   height: 150,
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey, width: 2),
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10)),
-                  child: Image.asset("asset/pngwing.com (1).png"),
+                  child: Image.asset("asset/skull candy Headset.png"),
                 ),
               ],
             ),
              Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children:  [
                
                 Container(
+                  
                   child: Text(
-                    "S23 Ultra",
+                    "NIvia Body wash ",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
                 
                 Container(
-                  child: Text(" Marshall ",
+                  child: Text( "skullcandy ",
                       style: TextStyle(fontWeight: FontWeight.bold)),
                 )
               ],
@@ -323,7 +350,7 @@ class PersonScreen extends StatelessWidget {
                         border: Border.all(color: Colors.grey, width: 2),
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10)),
-                    child: Image.asset("asset/calvin clien.webp"),
+                    child: Image.asset("asset/LERIYA FASHION SHIRT.png"),
                   ),
                 ),
                 Container(
@@ -333,7 +360,7 @@ class PersonScreen extends StatelessWidget {
                       border: Border.all(color: Colors.grey, width: 2),
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10)),
-                  child: Image.asset("asset/pngegg (1).png"),
+                  child: Image.asset("asset/s23ultra.webp"),
                 ),
               ],
             ),
@@ -343,13 +370,75 @@ class PersonScreen extends StatelessWidget {
                 
                 Container(
                   child: Text(
-                    "calvin clean",
+                    "Leriya FAshion",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
                
                 Container(
-                  child: Text("Ray sun glass",
+                  child: Text("samsung s23",
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                )
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                
+                Container(
+                  child: Text(
+                    "2 viewed",
+                    style: TextStyle(color: Color.fromARGB(255, 67, 65, 65)),
+                  ),
+                ),
+                
+                Container(
+                  child: Text("1 viewed",
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 83, 81, 81),
+                      )),
+                )
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Container(
+                    width: 150,
+                    height: 150,
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey, width: 2),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Image.asset("asset/watch bulova.png"),
+                  ),
+                ),
+                Container(
+                  width: 150,
+                  height: 150,
+                  decoration: BoxDecoration(
+                      border: Border.all(color: Colors.grey, width: 2),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Image.asset("asset/mack book.png"),
+                ),
+              ],
+            ),
+             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children:  [
+                
+                Container(
+                  child: Text(
+                    "Bulova Watch",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+               
+                Container(
+                  child: Text("Apple Macbook",
                       style: TextStyle(fontWeight: FontWeight.bold)),
                 )
               ],

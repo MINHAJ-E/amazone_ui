@@ -8,6 +8,7 @@ class SecondTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // backgroundColor: Colors.grey,
         body: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Column(children: [
@@ -68,166 +69,89 @@ class SecondTab extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      
-                      children: [
-                        Image.asset(
-                          "asset/iph13.webp",
-                          height: 130,
-                        ),
-                        Text(
-                          'i phone 13 (redish)',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 10),
-                          child: Container(
-                            height: 35,
-                            width: 170,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: const Color.fromARGB(255, 101, 2, 27)),
-                            child: const Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "Blockbustor Value Day",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              ],
+                    child: Card(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        
+                        children: [
+                          Image.asset(
+                            "asset/iph13.webp",
+                            height: 130,
+                          ),
+                          Text(
+                            'i phone 13 (redish)',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10),
+                            child: Container(
+                              height: 35,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: const Color.fromARGB(255, 101, 2, 27)),
+                              child: const Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "Blockbustor Value Day",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
+                          Text(
+                            '49,999.00',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'M.R.P:79,999.00',
+                            style: TextStyle(decoration: TextDecoration.lineThrough),
+                          ),
+                          Text(
+                            'Get it buy wed, April 19',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'free delivery',
+                            style: TextStyle(),
+                          ),
+                          SizedBox(height: 20,),
+                           Container(
+                                      alignment: Alignment.center,
+                                      width: 160,
+                                      height: 35,
+                                      decoration: BoxDecoration(
+                        color: Colors.amberAccent,
+                        borderRadius: BorderRadius.circular(30),
+                        // border: Border.all(color: Colors.grey, width: 2)
                         ),
-                        Text(
-                          '49,999.00',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        Text(
-                          'M.R.P:79,999.00',
-                          style: TextStyle(),
-                        ),
-                        Text(
-                          'Get it buy WED, APRIL 19',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        Text(
-                          'free delivery',
-                          style: TextStyle(),
-                        ),
-                        SizedBox(height: 20,),
-                         Container(
-                  alignment: Alignment.center,
-                  width: 160,
-                  height: 35,
-                  decoration: BoxDecoration(
-                      color: Colors.amberAccent,
-                      borderRadius: BorderRadius.circular(30),
-                      // border: Border.all(color: Colors.grey, width: 2)
+                        
+                                      child: const Text(
+                      "add to cart",
+                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                                      ),
+                                    ),
+                        ],
                       ),
-                      
-                  child: const Text(
-                    "add to cart",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
-                  ),
-                ),
-                      ],
                     ),
                   ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Image.asset(
-                        "asset/s21.png",
-                        height: 170,
-                      ),
-                      SizedBox(height: 20,),
-                      Text(
-                        'samsung s21(silver)',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      // Padding(
-                      //             padding: const EdgeInsets.only(top: 10),
-                      //             child: Container(
-                      //               height: 35,
-                      //               width: 170,
-                      //               decoration: BoxDecoration(
-                      //                   borderRadius:
-                      //                       BorderRadius.circular(10),
-                      //                   color: const Color.fromARGB(
-                      //                       255, 101, 2, 27)),
-                      //               child: const Column(
-                      //                 mainAxisAlignment:
-                      //                     MainAxisAlignment.center,
-                      //                 children: [
-                      //                   Text(
-                      //                     "Blockbustor Value Day",
-                      //                     style: TextStyle(
-                      //                         color: Colors.white,
-                      //                         fontWeight: FontWeight.bold),
-                      //                   ),
-                      //                 ],
-                      //               ),
-                      //             ),
-                      //           ),
-                      Text(
-                        '-30% 49,999.00',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        'M.R.P:79,999.00',
-                        style: TextStyle(),
-                      ),
-                      Text(
-                        'Get it buy WED, APRIL 19',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        'free delivery',
-                        style: TextStyle(),
-                      ),
-                       Container(
-                  alignment: Alignment.center,
-                  width: 160,
-                  height: 35,
-                  decoration: BoxDecoration(
-                    color: Colors.amberAccent,
-                    borderRadius: BorderRadius.circular(30),
-                    // border: Border.all(color: Colors.grey, width: 2)
-                    ),
-                    
-                  child: const Text(
-                  "add to cart",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
-                  ),
-                ),
-                    ],
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
+                  Card(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(top: 5),
-                          child: Image.asset(
-                            "asset/s23u.avif",
-                            height: 150,
-                          ),
+                        Image.asset(
+                          "asset/samsung s2111.png",
+                          height: 165,
                         ),
+                        SizedBox(height: 20,),
                         Text(
-                          'samsung s23 ultra(grey)',
+                          'samsung s21(silver)',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                         // Padding(
@@ -253,14 +177,16 @@ class SecondTab extends StatelessWidget {
                         //                 ],
                         //               ),
                         //             ),
-                        // ),
+                        //           ),
                         Text(
-                          '-20% 120,999.00',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          '-30% 49,999.00',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                         Text(
-                          'M.R.P:150,999.00',
-                          style: TextStyle(),
+                          'M.R.P:79,999.00',
+                          style: TextStyle(decoration: TextDecoration.lineThrough),
                         ),
                         Text(
                           'Get it buy WED, APRIL 19',
@@ -271,71 +197,157 @@ class SecondTab extends StatelessWidget {
                           style: TextStyle(),
                         ),
                          Container(
-                  alignment: Alignment.center,
-                  width: 160,
-                  height: 35,
-                  decoration: BoxDecoration(
-                    color: Colors.amberAccent,
-                    borderRadius: BorderRadius.circular(30),
-                    // border: Border.all(color: Colors.grey, width: 2)
-                    ),
-                  child: const Text(
-                  "add to cart",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
-                  ),
-                ),
-                      ],
-                    ),
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 5),
-                        child: Image.asset(
-                          "asset/iph13.webp",
-                          height: 150,
-                        ),
-                      ),
-                      Text(
-                        'i phone 13 (redish)',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      // 
-                      Text(
-                        '-28%off  1,19,000',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        'M.R.P:79,999.00',
-                        style: TextStyle(),
-                      ),
-                      Text(
-                        'Get it buy WED, APRIL 19',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      Text(
-                        'free delivery',
-                        style: TextStyle(),
-                      ),
-                       Container(
-                  alignment: Alignment.center,
-                  width: 160,
-                  height: 35,
-                  decoration: BoxDecoration(
+                    alignment: Alignment.center,
+                    width: 160,
+                    height: 35,
+                    decoration: BoxDecoration(
                       color: Colors.amberAccent,
                       borderRadius: BorderRadius.circular(30),
                       // border: Border.all(color: Colors.grey, width: 2)
                       ),
-                  child: const Text(
+                      
+                    child: const Text(
                     "add to cart",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                    ),
+                                  ),
+                      ],
+                    ),
                   ),
-                ),
-                    ],
+                ],
+              ),
+              // Divider(
+              //   height: 10, color:Color.fromARGB(255, 206, 200, 200),thickness: 10,
+              // ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(top: 5),
+                            child: Image.asset(
+                              "asset/nothing phone.png",
+                              height: 150,
+                            ),
+                          ),
+                          Text(
+                            'Nothing Phone 1 5G Black',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          // Padding(
+                          //             padding: const EdgeInsets.only(top: 10),
+                          //             child: Container(
+                          //               height: 35,
+                          //               width: 170,
+                          //               decoration: BoxDecoration(
+                          //                   borderRadius:
+                          //                       BorderRadius.circular(10),
+                          //                   color: const Color.fromARGB(
+                          //                       255, 101, 2, 27)),
+                          //               child: const Column(
+                          //                 mainAxisAlignment:
+                          //                     MainAxisAlignment.center,
+                          //                 children: [
+                          //                   Text(
+                          //                     "Blockbustor Value Day",
+                          //                     style: TextStyle(
+                          //                         color: Colors.white,
+                          //                         fontWeight: FontWeight.bold),
+                          //                   ),
+                          //                 ],
+                          //               ),
+                          //             ),
+                          // ),
+                          Text(
+                            '-20% 38,999.00',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'M.R.P:48,999.00',
+                            style: TextStyle(decoration: TextDecoration.lineThrough),
+                          ),
+                          Text(
+                            'Get it buy WED,APRIL 19',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'free delivery',
+                            style: TextStyle(),
+                          ),
+                           Container(
+                                      alignment: Alignment.center,
+                                      width: 160,
+                                      height: 35,
+                                      decoration: BoxDecoration(
+                      color: Colors.amberAccent,
+                      borderRadius: BorderRadius.circular(30),
+                      // border: Border.all(color: Colors.grey, width: 2)
+                      ),
+                                      child: const Text(
+                                      "add to cart",
+                                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                                      ),
+                                    ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Card(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 5),
+                          child: Image.asset(
+                            "asset/realme narzo phone.png",
+                            height: 150,
+                          ),
+                        ),
+                        Text(
+                          'redmi 12 c (matteblack)',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        // 
+                        Text(
+                          '-28%off  29,000',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          'M.R.P:39,999.00',
+                          style: TextStyle(decoration: TextDecoration.lineThrough),
+                        ),
+                        Text(
+                          'Get it buy WED, May 20',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          'free delivery',
+                          style: TextStyle(),
+                        ),
+                         Container(
+                    alignment: Alignment.center,
+                    width: 160,
+                    height: 35,
+                    decoration: BoxDecoration(
+                        color: Colors.amberAccent,
+                        borderRadius: BorderRadius.circular(30),
+                        // border: Border.all(color: Colors.grey, width: 2)
+                        ),
+                    child: const Text(
+                      "add to cart",
+                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                    ),
+                                  ),
+                      ],
+                    ),
                   ),
                 ],
               )

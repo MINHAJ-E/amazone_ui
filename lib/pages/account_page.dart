@@ -46,16 +46,19 @@ class YourAccount extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 5),
-              child: Text(
-                'Orders',
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  'Orders',
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
                   width: 400,
-                  height: 110,
+                  height: 120,
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey, width: 1),
                       borderRadius: BorderRadius.circular(10),
@@ -63,10 +66,13 @@ class YourAccount extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Your Orders                     >',
-                        style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.bold),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          'Your Orders                           >',
+                          style: TextStyle(
+                              fontSize: 25,),
+                        ),
                       ),
                       SizedBox(
                         height: 15,
@@ -75,17 +81,23 @@ class YourAccount extends StatelessWidget {
                         height: 5,
                         color: Colors.grey,
                       ),
-                      Text(
-                        'Subscribe&Save               >',
-                        style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.bold),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          'Subscribe&Save                    >',
+                          style: TextStyle(
+                              fontSize: 25,),
+                        ),
                       ),
                     ],
                   )),
             ),
-            Text(
-              'Account Settings',
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Account Settings',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
